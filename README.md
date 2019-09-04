@@ -1,7 +1,7 @@
 # Unattended-Upgrades Role for Ansible
 
 [![Build Status of branch master](https://img.shields.io/travis/jnv/ansible-role-unattended-upgrades/master.svg?style=flat-square)](https://travis-ci.org/jnv/ansible-role-unattended-upgrades)
-[![Ansible Role: jnv.unattended-upgrades](https://img.shields.io/ansible/role/8068.svg?style=flat-square)](https://galaxy.ansible.com/jnv/unattended-upgrades/)
+[![Ansible Role: ansible-unattended-upgrades](https://img.shields.io/ansible/role/8068.svg?style=flat-square)](https://galaxy.ansible.com/jnv/unattended-upgrades/)
 
 Install and setup [unattended-upgrades](https://launchpad.net/unattended-upgrades) for Ubuntu and Debian (since Wheezy), to periodically install security upgrades.
 
@@ -107,7 +107,7 @@ Example for Ubuntu, with custom [origins patterns](#patterns-examples), blacklis
 ```yaml
 - hosts: all
   roles:
-  - role: jnv.unattended-upgrades
+  - role: ansible-unattended-upgrades
     unattended_origins_patterns:
     - 'origin=Ubuntu,archive=${distro_codename}-security'
     - 'o=Ubuntu,a=${distro_codename}-updates'
